@@ -19,6 +19,16 @@ body{
 h1{
     color: #ffffff;
     font-size: 60px;
+    margin:0 0 24px 0;
+    line-height: 100%;
+}
+h2{
+    font-size: 40px;
+    color: var(--dark-gray);
+}
+h3{
+    color: var(--brand);
+    font-size: 24px;
 }
 a{
     text-decoration: none; 
@@ -52,19 +62,58 @@ a{
     padding: 12px 20px;
     color: #ffffff;
 }
-.first .container{
+.first{
     background-image: url(/img/hero_section.webp);
     background-size: cover;
-    height: 620px;
+    background-position: top center;
+    height: calc(100vh - 100px);
     margin-top: 30px;
     display: flex;
     align-items: center;
+    margin-bottom: 100px;
 }
-.content{
+.first .container{
     width: 560px;
     color: #ffffff;
+    margin-left: 150px;
 }
-.content a{
+.first .container a{
     display: inline-block;
     margin: 25px;
 }
+.middle-content .container{
+      display:flex;
+      margin-bottom: 100px;
+}
+.content{
+    margin-left: 25px;
+    padding: 40px 0;
+}
+.content p{
+    margin: 30px 0;
+    color: var(--bright-gray);
+    line-height: 150%;
+}
+.title-box{
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+}
+.our-services .container p{
+    line-height: 150%;
+    opacity: 0.7;
+    color: var(--bright-gray);
+}
+.bold{
+    font-weight: 600;
+}
+.card{
+    width:365px;
+    padding: 26px 58px
+}
+.card p{
+    color: var(--bright-gray);
+    line-height: 150%;
+    margin-top: 20px;
+}
+
