@@ -37,6 +37,7 @@ a{
 img{
     display: block;
 }
+
 .container{
     width: 1140px;
     margin-left: auto;
@@ -166,9 +167,12 @@ img{
 .container .bright-btn{
     border: solid 2px #ffffff;
 }
-.container p{
+.paragraph{
     margin: 25px 0;
     line-height: 150%;
+} 
+.our-pacients{
+    margin-bottom: 135px;
 }
 .description, .description h2{
     color: #ffffff
@@ -182,4 +186,58 @@ img{
     width: 850px;
     padding: 50px 0;
 }
-
+.coment-content{
+    text-align: center;
+}
+.coment{
+    color: var(--gray-600);
+    margin-bottom: 0;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 150%;
+    margin: 36px 0;
+}
+.client{
+    color: var(--brand);
+    font-weight: 600;
+}
+.map-content .container{
+    display: flex;
+}
+.content-text-details{
+    list-style-position: inside;
+}
+.address{
+    margin: 16px 0;
+}
+.content-text-details h2{
+   margin-bottom: 24px;
+}
+.content-text-details h3{
+    margin-bottom: 13px;
+}
+ul{
+    color: var(--gray-600);
+    line-height: 150%;
+}
+.map-content{
+    margin-bottom: 100px;
+}
+.footer{
+    background-color: var(--brand-dark);
+    color: #ffffff;
+    padding: 24px 0;
+}
+.footer p{
+    margin: 5px 0;
+    line-height: 150%;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+}
