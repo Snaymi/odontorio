@@ -38,12 +38,20 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+.header{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--brank-light);
+    padding: 32px 0;
+}
 .header .container{
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 32px;
 }
 .menu{
     display: flex;
@@ -67,7 +75,6 @@ a{
     background-size: cover;
     background-position: top center;
     height: calc(100vh - 100px);
-    margin-top: 30px;
     display: flex;
     align-items: center;
     margin-bottom: 100px;
