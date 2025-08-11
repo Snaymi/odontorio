@@ -73,13 +73,16 @@ a{
     margin-bottom: 100px;
 }
 .first .container{
-    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
     color: #ffffff;
-    margin-left: 150px;
 }
 .first .container a{
     display: inline-block;
     margin: 25px;
+}
+.smile{
+    width: 560px;
 }
 .middle-content .container{
       display:flex;
@@ -97,7 +100,9 @@ a{
 .title-box{
     text-align: center;
     width: 750px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 .our-services .container p{
     line-height: 150%;
@@ -107,13 +112,30 @@ a{
 .bold{
     font-weight: 600;
 }
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+}
 .card{
-    width:365px;
-    padding: 26px 58px
+    padding: 58px 24px;
+    display: block;
+    text-align: center;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color:#ffffff;
 }
 .card p{
-    color: var(--bright-gray);
     line-height: 150%;
     margin-top: 20px;
+    font-size: 14px;
+    width: 315px;
+}
+.card:hover{
+    background-color: var(--brand);
+}
+.card:hover h3,
+.card:hover p{
+    color: #ffffff;
 }
 
