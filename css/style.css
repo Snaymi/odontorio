@@ -76,6 +76,10 @@ img{
     color: #ffffff;
     display: inline-block;
 }
+.bright-btn:hover{
+    background-color: var(--brand-dark);
+    text-decoration: none;
+}
 .first{
     background-image: url(../img/hero_section.webp);
     background-size: cover;
