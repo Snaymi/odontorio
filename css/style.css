@@ -301,7 +301,6 @@ ul{
     .options{
       justify-content: center;
     }
-
     .title-box{
         max-width: 750px;
         width: 100%;
@@ -321,4 +320,5 @@ ul{
     .smile h1{
         font-size: 36px;
     }
+}
 }
