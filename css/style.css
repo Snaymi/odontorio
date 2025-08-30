@@ -49,7 +49,7 @@ img{
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 50;
     background-color: #fff;
     padding: 32px 0;
 }
@@ -82,13 +82,24 @@ img{
     text-decoration: none;
 }
 .first{
-    background-image: url(../img/hero_section.webp);
+    
     background-size: cover;
     background-position: top center;
     height: calc(100vh - 100px);
     display: flex;
     align-items: center;
     margin-bottom: 100px;
+}
+
+.slide1{
+    background-image: url(../img/hero_section.webp);
+}
+.slide2{
+    background-image: url(../img/consultorio.webp);
+}
+.slide3{
+    background-image: url(../img/drsorrindo.webp);
+
 }
 .first .container{
     margin-left: auto;
