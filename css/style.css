@@ -90,7 +90,12 @@ img{
     align-items: center;
     margin-bottom: 100px;
 }
-
+.first h2{
+    color: #ffffff;
+    font-size: 60px;
+    margin:0 0 24px 0;
+    line-height: 100%;
+}
 .slide1{
     background-image: url(../img/hero_section.webp);
 }
