@@ -229,6 +229,9 @@ ul{
 .map-content{
     margin-bottom: 100px;
 }
+.map iframe{
+    width: 100%;
+}
 .footer{
     background-color: var(--brand-dark);
     color: #ffffff;
@@ -246,6 +249,21 @@ ul{
 .social-media{
     display: flex;
     gap: 20px;
+}
+@media(max-width: 1200px){
+    .img-smile{
+        display: none;
+    }
+    .options{
+      justify-content: center;
+    }
+    .map-content .container{
+        flex-direction: column;
+    }
+    .map{
+        margin-top: 35px;
+        text-align: center;
+    }
 }
 @media(max-width: 950px){
     
@@ -298,13 +316,16 @@ ul{
         max-width: 550px;
         width: 100%;
     }
-    .options{
-      justify-content: center;
-    }
     .title-box{
         max-width: 750px;
         width: 100%;
     }
+    .footer-content{
+        flex-direction:column;
+        text-align: center;
+        row-gap: 20px;
+    }
+  
 @media(max-width: 600px){
     .smile h1{
         font-size: 36px;
@@ -319,6 +340,12 @@ ul{
     }
     .smile h1{
         font-size: 36px;
+    }
+      .card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 }
