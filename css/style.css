@@ -99,7 +99,10 @@ img{
 }
 .slide3{
     background-image: url(../img/drsorrindo.webp);
+}
 
+.slide4{
+    background-image: url(../img/crianca-dentista.webp);
 }
 .first .container{
     margin-left: auto;
