@@ -47,7 +47,24 @@ img{
     align-items: center;
     justify-content: center;
 }
-
+.hide-popup{
+    display:none;
+}
+.img-popup{
+    position: relative;
+}
+.img-popup span{
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    transition: 300ms ease-in;
+    cursor: pointer;
+}
+.img-popup span:hover{
+    color: rgb(75, 191, 245);
+    transform: scale(1.3);
+}
 .container{
     width: 95%;
     max-width: 1140px;
