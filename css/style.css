@@ -145,6 +145,10 @@ img{
     display: inline-block;
     margin: 25px;
 }
+.swiper-button-next,
+.swiper-button-prev{
+    display: none;
+}
 .smile{
     width: 560px;
 }
@@ -205,6 +209,25 @@ img{
 .card:hover h3,
 .card:hover p{
     color: #ffffff;
+
+
+}
+
+.mySwiperCards{
+    text-align: center;
+    width: 350px;
+    
+}
+.swiper-wrapper{
+    background-color: #fdfdfd;
+    transition: 200ms ease-in;
+}
+.swiper-wrapper:hover{
+    background-color: #00000000;
+}
+
+.swiper-slide{
+    transform: 300ms ease;
 }
 .schedule-now{
     margin-bottom: 100px;
