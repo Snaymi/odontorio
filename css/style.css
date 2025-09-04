@@ -52,6 +52,8 @@ img{
 }
 .img-popup{
     position: relative;
+    max-width: 700px;
+    width: 100%;
 }
 .img-popup span{
     position: absolute;
@@ -400,9 +402,14 @@ ul{
         text-align: center;
         row-gap: 20px;
     }
-  
+    .img-popup{
+        
+    }
 @media(max-width: 600px){
     .smile h1{
+        font-size: 36px;
+    }
+    .smile h2{
         font-size: 36px;
     }
     .first{
