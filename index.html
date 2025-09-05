@@ -84,8 +84,6 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
     <div class="middle-content">
@@ -126,6 +124,8 @@
                             <p>Correção do alinhamento dos dentes e mordida com aparelhos fixos e móveis.</p>
                         </span>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
                 <div class="swiper2 mySwiperCards">
                     <div class="swiper-wrapper">
@@ -142,6 +142,8 @@
                             <p>Tratamento endodôntico para salvar dentes com infecção ou danos na raiz.</p>
                         </span>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
                 <div class="swiper2 mySwiperCards">
                     <div class="swiper-wrapper">
@@ -158,6 +160,8 @@
                             <p>Atendimento especializado para crianças, com foco em prevenção e cuidado humanizado.</p>
                         </span>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
@@ -253,10 +257,6 @@
                 pauseOnMouseEnter: false,
                 waitForTransition: true
             },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -268,10 +268,15 @@
             swiper.autoplay.stop();
             swiper.autoplay.start();
         });
-        var swiper2 = new Swiper(".mySwiperCards", {
-            effect: "cards",
-            grabCursor: true,
-        });
+        document.querySelectorAll('.mySwiperCards').forEach(function (el) {
+    new Swiper(el, {
+        effect: "cards",
+        navigation: {
+            nextEl: el.querySelector('.swiper-button-next'),
+            prevEl: el.querySelector('.swiper-button-prev'),
+        },
+    });
+});
     </script>
 
 

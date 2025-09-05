@@ -3,7 +3,8 @@
 :root{
     --brand: #20AD96;
     --brand-dark: #028176;
-    --brank-light: #F3FFFD;
+    --brand-light: #7ff3e5;
+    --brand-lighter: #F3FFFD;
     --dark-gray: #333333;
     --bright-gray: #666666;
 }
@@ -147,9 +148,21 @@ img{
     display: inline-block;
     margin: 25px;
 }
-.swiper-button-next,
-.swiper-button-prev{
-    display: none;
+
+.swiper-button-next, .swiper-button-prev {
+    transition: all 200ms ease-in;
+    margin: -15px -15px;
+    font-weight: 700;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 15px;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--brand-dark);
+    border-radius: 100px;
+    color: #fff;
 }
 .smile{
     width: 560px;
@@ -198,6 +211,7 @@ img{
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     color:#ffffff;
+    transition: all 300ms ease-in;
 }
 .card p{
     line-height: 150%;
@@ -407,13 +421,18 @@ ul{
     }
 @media(max-width: 600px){
     .smile h1{
-        font-size: 36px;
+        font-size: 20px;
+        width: 350px;
     }
     .smile h2{
-        font-size: 36px;
+        font-size: 20px;
+        width: 350px;
     }
     .first{
         background-position: 60% center;
+    }
+    .smile p{
+        width: 300px;
     }
 }
 @media(max-width: 460px){
