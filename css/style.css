@@ -238,9 +238,6 @@ img{
     background-color: #fdfdfd;
     transition: 200ms ease-in;
 }
-.swiper-wrapper:hover{
-    background-color: #00000000;
-}
 
 .swiper-slide{
     transform: 300ms ease;
@@ -416,8 +413,9 @@ ul{
         text-align: center;
         row-gap: 20px;
     }
-    .img-popup{
-        
+    .img-popup img{
+        width: 100%;
+        height: auto;
     }
 @media(max-width: 600px){
     .smile h1{
