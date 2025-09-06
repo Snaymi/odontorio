@@ -186,26 +186,36 @@
         <div class="container">
             <div class="coment-content">
                 <h2>O que nossos pacientes dizem</h2>
-                <p class="coment">"Minha experiência na clínica foi excepcional. Desde o atendimento inicial até
-                    o final do tratamento, a equipe foi extremamente profissional e atenciosa. Meu clareamento
-                    dental superou minhas expectativas e o resultado ficou maravilhoso!”</p>
-                <p class="client">Claudio Silva</p>
-            </div>
-            <div class="coment-content">
-                <p class="coment">"Nunca imaginei que fosse me sentir tão acolhido em um consultório. Desde a recepção
-                    até o pós-tratamento, tudo foi feito com muito cuidado. Fiz uma limpeza profunda e saí com a
-                    sensação de renovação total!”</p>
-                <p class="client">Renato Almeida</p>
-            </div>
-            <div class="coment-content">
-                <p class="coment">"Desde o primeiro contato, senti confiança. Fiz implantes dentários e o resultado
-                    ficou tão natural que ninguém percebe. Atendimento humano e tecnologia de ponta!”</p>
-                <p class="client">Fernanda Duarte</p>
-            </div>
-            <div class="coment-content">
-                <p class="coment">"Sofria há anos com dores na mandíbula e só aqui encontrei um diagnóstico preciso. O
-                    tratamento foi eficaz e hoje vivo sem dor. Gratidão eterna à equipe!”</p>
-                <p class="client">Carlos Henrique</p>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="coment">"Minha experiência na clínica foi excepcional. Desde o atendimento inicial
+                                até o final do tratamento, a equipe foi extremamente profissional e atenciosa. Meu
+                                clareamento dental superou minhas expectativas e o resultado ficou maravilhoso!”</p>
+                            <p class="client">Claudio Silva</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="coment">"Nunca imaginei que fosse me sentir tão acolhido em um consultório. Desde
+                                a recepção até o pós-tratamento, tudo foi feito com muito cuidado. Fiz uma limpeza
+                                profunda e saí com a sensação de renovação total!”</p>
+                            <p class="client">Renato Almeida</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="coment">"Desde o primeiro contato, senti confiança. Fiz implantes dentários e o
+                                resultado ficou tão natural que ninguém percebe. Atendimento humano e tecnologia de
+                                ponta!”</p>
+                            <p class="client">Fernanda Duarte</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="coment">"Sofria há anos com dores na mandíbula e só aqui encontrei um diagnóstico
+                                preciso. O tratamento foi eficaz e hoje vivo sem dor. Gratidão eterna à equipe!”</p>
+                            <p class="client">Carlos Henrique</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-next2"></div>
+                    <div class="swiper-button-prev swiper-button-prev2"></div>
+
+                </div>
             </div>
 
         </div>
@@ -294,8 +304,13 @@
                 },
             });
         });
+        var swiper2 = new Swiper(".mySwiper2", {
+            navigation: {
+                nextEl: ".swiper-button-next2",
+                prevEl: ".swiper-button-prev2",
+            },
+        });
     </script>
-
 
 
     <script src="js/script.js"></script>

@@ -199,6 +199,24 @@ img {
     color: #fff;
 }
 
+.swiper-button-next2,
+.swiper-button-prev2 {
+    transition: all 200ms ease-in;
+    margin: -15px -15px;
+    font-weight: 700;
+}
+
+.swiper-button-next2::after,
+.swiper-button-prev2::after {
+    font-size: 15px;
+}
+
+.swiper-button-next2:hover,
+.swiper-button-prev2:hover {
+    background-color: var(--brand-dark);
+    border-radius: 100px;
+    color: #fff;
+}
 .smile {
     width: 560px;
 }
